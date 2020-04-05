@@ -11,5 +11,6 @@ public interface IRoleService {
 	 public Role createRole(Role role);
 	 public Role updateRole(Role role);
 	 public boolean removeRole(long idRole);
+	 public Role getRoleBynomRole(String nomRole);
 
 }

@@ -10,31 +10,46 @@ public class Login {
 	
 	@Id
 	private String identifUser;
-	private String passwordUser;
+	private String motDePass;
 	
 	
 	
 	public Login() {
 		super();
 	}
-	public Login(String identifUser, String passwordUser) {
+
+	
+	public Login(String identifUser, String motDePass) {
 		super();
 		this.identifUser = identifUser;
-		this.passwordUser = passwordUser;
+		this.motDePass = motDePass;
 	}
+
+	
+
+	public String getMotDePass() {
+		return motDePass;
+	}
+
+
+	public void setMotDePass(String motDePass) {
+		this.motDePass = motDePass;
+	}
+
+
 	public String getIdentifUser() {
 		return identifUser;
 	}
 	public void setIdentifUser(String identifUser) {
 		this.identifUser = identifUser;
 	}
-	public String getPasswordUser() {
-		return passwordUser;
+
+
+	@Override
+	public String toString() {
+		return "Login [identifUser=" + identifUser + ", motDePass=" + motDePass + "]";
 	}
-	public void setPasswordUser(String passwordUser) {
-		this.passwordUser = passwordUser;
-	}
-	
+
 	
 
 }

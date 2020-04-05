@@ -27,6 +27,12 @@ public class RoleService implements IRoleService{
 		Role role=opRole.get();
 		return role;
 	}
+	
+	//////////////
+	public Role getRoleBynomRole(String nomRole) {
+		return roleRepository.findBynomRole(nomRole);
+	}
+
 
 	
 	public Role createRole(Role role) {
